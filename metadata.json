@@ -1,32 +1,38 @@
 {
-  "name": "environment-modules",
-  "version": "0.5.0",
-  "author": "Simon Skog",
-  "summary": "Module for installing environment-modules and configure modulepath.",
-  "license": "Apache-2.0",
-  "source": "https://github.com/Sparc0/environment-modules",
-  "project_page": "https://github.com/Sparc0/environment-modules",
-  "issues_url": "https://github.com/Sparc0/environment-modules/issues",
-  "dependencies": [
-    {"name":"puppetlabs/stdlib","version_requirement":">= 3.0.0"},
-    {"name":"puppetlabs/concat","version_requirement":">= 1.0.0"}
-  ],
-  "operatingsystem_support": [
-    {
-      "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [
-        "14.04"
-      ]
-    },
-  ],
-  "requirements": [
-    {
-      "name": "pe",
-      "version_requirement": "3.7"
-    },
-    {
-      "name": "puppet",
-      "version_requirement": "3.4"
-    }
-  ]
+    "name": "environment-modules",
+    "version": "0.5.0",
+    "author": "Simon Skog",
+    "summary": "Module for installing environment-modules and configure modulepath.",
+    "license": "Apache-2.0",
+    "source": "https://github.com/Sparc0/environment-modules",
+    "project_page": "https://github.com/Sparc0/environment-modules",
+    "issues_url": "https://github.com/Sparc0/environment-modules/issues",
+    "dependencies": [
+        {
+            "name": "puppetlabs/stdlib",
+            "version_requirement": ">= 3.0.0"
+        },
+        {
+            "name": "puppetlabs/concat",
+            "version_requirement": ">= 1.0.0"
+        }
+    ],
+    "operatingsystem_support": [
+        {
+            "operatingsystem": "Ubuntu",
+            "operatingsystemrelease": [
+                "14.04"
+            ]
+        }
+    ],
+    "requirements": [
+        {
+            "name": "pe",
+            "version_requirement": "3.7"
+        },
+        {
+            "name": "puppet",
+            "version_requirement": "3.4"
+        }
+    ]
 }
