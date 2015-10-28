@@ -13,12 +13,14 @@
 This Puppet module is managing the installation and configuration of environment-modules. 
 The modules use Hiera to set variables and serve configuration files. It's tested on Ubuntu 14.04. 
 
-## Setup
------
+
+
+Setup
+
 ### The module is doing:
 
-*Installing environment-modules from repo.
-*Add lines in /etc/environment-modules/modulepath
+* Installing environment-modules from repo.
+* Add lines in /etc/environment-modules/modulepath
 
 ### Requirements
 
@@ -64,6 +66,5 @@ At the moment it can only write one line into modulepath.
 This module is a rewriten version of [autofs](https://github.com/dhollinger/autofs-puppet).
 
 ## Contact
--------
 Simon Skog: [sparco@hackernet.se](mailto:sparco@hackernet.se)
 
