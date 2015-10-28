@@ -1,0 +1,4 @@
+---
+modules::paths:
+  modulepath: '/opt/local/mod'
+  order: 01
