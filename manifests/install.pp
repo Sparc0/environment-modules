@@ -1,7 +1,7 @@
 # Ensures that environment-modules is installed.
-
+#
 class modules::install {
-        package {
+        Package {
           ensure => installed
         }
         case $::osfamily {

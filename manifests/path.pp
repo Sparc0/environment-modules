@@ -11,14 +11,14 @@
 #
 #
 define modules::path (
-        $modulepath,
+        $path,
         $order,
 ) {
 
 
-        concat::fragment { "modules::fragment preamble ${path}":
-                ensure  => present
+        concat::fragment { "modulepath":
                 target  => '/etc/environment-modules/modulespath',
-                content => "${modulepath} \n",
+                content => "${path} \n",
                 order   => $order,
         }
+}

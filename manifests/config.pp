@@ -7,8 +7,9 @@
 #
 class modules::config {
         concat { '/etc/environment-modules/modulespath':
-                owner => 'root',
-                group => 'root',
-                mode  => '0644',
+                ensure => 'present',
+                owner  => 'root',
+                group  => 'root',
+                mode   => '0644',
         }
 }
