@@ -1,5 +1,5 @@
 {
-    "name": "sparco-modules",
+    "name": "Sparco-modules",
     "version": "0.5.0",
     "author": "Simon Skog",
     "summary": "Module for installing environment-modules and configure modulepath.",
