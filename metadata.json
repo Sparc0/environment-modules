@@ -1,12 +1,12 @@
 {
-    "name": "environment-modules",
+    "name": "sparco-modules",
     "version": "0.5.0",
     "author": "Simon Skog",
     "summary": "Module for installing environment-modules and configure modulepath.",
     "license": "Apache-2.0",
-    "source": "https://github.com/Sparc0/environment-modules",
-    "project_page": "https://github.com/Sparc0/environment-modules",
-    "issues_url": "https://github.com/Sparc0/environment-modules/issues",
+    "source": "https://github.com/Sparc0/sparco-modules",
+    "project_page": "https://github.com/Sparc0/sparco-modules",
+    "issues_url": "https://github.com/Sparc0/sparco-modules/issues",
     "dependencies": [
         {
             "name": "puppetlabs/stdlib",
