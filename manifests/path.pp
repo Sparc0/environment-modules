@@ -11,14 +11,21 @@
 #
 #
 define modules::path (
-        $path,
-        $order,
+ $path,
+ $order,
 ) {
 
+  concat::fragment { "modulepath":
+    target  => '$modulefile',
+    content => "${path} \n",
+    order   => $order,
+    }
 
-        concat::fragment { "modulepath":
-                target  => '/etc/environment-modules/modulespath',
-                content => "${path} \n",
-                order   => $order,
-        }
+  file { $modulefile:
+    ensure  => present,
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0644',
+	content => template(modules/modulepath.erb)
+	}  
 }

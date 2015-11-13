@@ -14,15 +14,14 @@
 # Copyright 2015 Simon Skog.
 #
 class modules (
-        $paths = undef
+  $paths = undef
 ) {
-        class { 'modules::install': }
-        class { 'modules::config': }
-        contain 'modules::install'
-        contain 'modules::config'
+  class { 'modules::install': }
+  class { 'modules::config': }
+  contain 'modules::install'
+  contain 'modules::config'
 
-        if ( $paths != undef ) {
-                class { 'modules::paths': path => $paths }
-        }
-        
+  if ( $paths != undef ) {
+    class { 'modules::paths': path => $paths }
+  }   
 }
